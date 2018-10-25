@@ -1,6 +1,4 @@
 function pal (s) {
-  let reversed = s.split('').reverse().join('');
-  return s === reversed ? true : false;
+  return s === s.split('').reverse().join('');
 }
-
 console.log(pal("lol"));
