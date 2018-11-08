@@ -5,7 +5,7 @@ function Student(first, last, id, grades) {
   this.grades = grades;
 
   Object.defineProperties(this, {
-    'avgGrade' : { get: function() { return this.grades.reduce((a,b) => a + b, 0) / this.grades.length - 1; }},
+    'avgGrade' : { get: function() { return this.grades.reduce((a,b) => a + b, 0) / this.grades.length; }},
     'getFullName' : { get: function() { return this.firstName + ' ' + this.lastName; }},
     'setFullName' : { set: function(fullName) { this.firstName = fullName[0]; this.lastName = fullName[1]; }}
   });
