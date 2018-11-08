@@ -10,6 +10,6 @@ function Student(first, last, id, grades) {
   };
 };
 
-var student = new Student("Dima", "Lentay", 1, [5,5,2,5]);
+let student = new Student("Dima", "Lentay", 1, [5,5,2,5]);
 
 student.printInfo();
