@@ -5,7 +5,7 @@ function Student(first, last, id, grades) {
   this.grades = grades;
 
   this.printInfo = function() {
-    let avg = this.grades.reduce((a,b) => a + b, 0);
+    let avg = this.grades.reduce((a,b) => a + b, 0) / this.grades.length - 1;
     console.log(this.firstName + ' ' + this.lastName + " has avarage grade: " + avg);
   };
 };
