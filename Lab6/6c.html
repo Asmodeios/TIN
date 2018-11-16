@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="6c.js"></script>
+<style media="screen">
+  input[type='text'] {
+  padding:10px;
+  font-size:1.2em;
+}
+input[type='button'] {
+  background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+</style>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <form>
+    <p>
+      <input type="text" id="email" placeholder="Enter email">
+      <span id="emailErrorText"></span>
+    </p>
+    <p>
+      <input type="text" id="numeric" placeholder="Enter any numeric">
+      <span id="numericErrorText"></span>
+    </p>
+    <p>
+      <input type="button" onclick="validate()" value="Validate">
+    </p>
+
+  </form>
+</body>
+
+</html>
