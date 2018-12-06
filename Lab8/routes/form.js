@@ -15,4 +15,9 @@ router.post('/formdata', urlencodedParser, (req, res) => {
 router.post('/formdata',jsonParser, (req, res) => {
   res.render('signed', { login: req.body.login, email: req.body.email });
 });
+
+router.post('/jsondata', jsonParser, (req, res) => {
+  res.send(`<h1>${JSON.stringify(req.body)}</h1>`);
+})
+
 module.exports = router;
