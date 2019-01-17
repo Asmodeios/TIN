@@ -1,5 +1,5 @@
 import React from 'react'
 
-const Text = function(props) { return <span>{props.text}</span> }
+const Text = function(props) { return <span className={props.className}>{props.text}</span> }
 
 export default Text

@@ -65,13 +65,13 @@ class Form extends React.Component {
         return (
             <form>
                 <Label labelName="login" value="Login: "/>
-                <input type="text" id="login" value={this.state.login} onChange={this.loginHandleChange.bind(this)}></input><Text text={this.state.loginMessage}/>
+                <input type="text" id="login" value={this.state.login} onChange={this.loginHandleChange.bind(this)}></input><Text text={this.state.loginMessage} className="error"/>
                 <br></br>
                 <Label labelName="email" value="Email: "/>
-                <input type="text" id="email" value={this.state.email} onChange={this.emailHandleChange.bind(this)}></input><Text text={this.state.emailMessage}/>
+                <input type="text" id="email" value={this.state.email} onChange={this.emailHandleChange.bind(this)}></input><Text text={this.state.emailMessage} className="error"/>
                 <br></br>
                 <Label labelName="password" value="Password: "/>
-                <input type="password" id="password" value={this.state.password} onChange={this.passwordHandleChange.bind(this)}></input><Text text={this.state.passwordMessage}/>
+                <input type="password" id="password" value={this.state.password} onChange={this.passwordHandleChange.bind(this)}></input><Text text={this.state.passwordMessage} className="error"/>
             </form>
         );
     }
